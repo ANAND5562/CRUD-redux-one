@@ -36,7 +36,7 @@ function Home() {
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>
-                                    <Link to={`/edit/${user.id}`} className='btn btn-sm btn-primary'>Update</Link>
+                                    <Link to={`/edit/${user.id}`} className='btn btn-sm btn-secondary'>Update</Link>
                                     <button onClick={() => handleDelete(user.id)} className='btn btn-sm btn-danger ms-2'>Delete</button>
                                 </td>
                             </tr>
