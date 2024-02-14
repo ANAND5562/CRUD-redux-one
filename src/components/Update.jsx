@@ -37,13 +37,10 @@ function Update() {
     <>
 
       <div className="container mt-5">
-        <div className="row justify-content-center">
-          <div className="col-md-6">
-            <Link to={"/"}>
-              <button className='btn btn-warning'>Bank to home</button>
-            </Link>
+        <div className="row justify-content-end">
+          <div className="col-md-4 mt-5">
             <h2 className="mb-4">Update User</h2>
-            <form onSubmit={handleUpdate}>
+            <form onSubmit={handleUpdate} className='mt-5'>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
@@ -55,7 +52,7 @@ function Update() {
                   onChange={e => setUname(e.target.value)}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group mt-4 mb-5">
                 <label htmlFor="email">Email address</label>
                 <input
                   type="email"
@@ -66,7 +63,10 @@ function Update() {
                   onChange={e => setUemail(e.target.value)}
                 />
               </div>
-              <button type="submit" className="btn btn-warning">Update</button>
+              <Link to={"/"}>
+                <button type="submit" className="btn btn-secondary">Back</button>
+              </Link>
+              <button type="submit" className="btn btn-info ms-2">Update</button>
             </form>
           </div>
         </div>
