@@ -25,13 +25,10 @@ function Create() {
         <>
 
             <div className="container mt-5">
-                <div className="row justify-content-center">
-                    <div className="col-md-6">
-                        <Link to={"/"}>
-                            <button className='btn btn-warning'>Bank to home</button>
-                        </Link>
+                <div className="row justify-content-end">
+                    <div className="col-md-4 mt-5">
                         <h2 className="mb-4">Create User</h2>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} className='mt-5'>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input
@@ -42,7 +39,7 @@ function Create() {
                                     onChange={e => setName(e.target.value)}
                                 />
                             </div>
-                            <div className="form-group mt-4">
+                            <div className="form-group mt-4 mb-5">
                                 <label htmlFor="email">Email address</label>
                                 <input
                                     type="email"
@@ -52,7 +49,10 @@ function Create() {
                                     onChange={e => setEmail(e.target.value)}
                                 />
                             </div>
-                            <button type="submit" className="btn btn-warning">Create</button>
+                            <Link to={"/"}>
+                                <button type="submit" className="btn btn-secondary">Back</button>
+                            </Link>
+                            <button type="submit" className="btn btn-info ms-2">Create</button>
                         </form>
                     </div>
                 </div>
