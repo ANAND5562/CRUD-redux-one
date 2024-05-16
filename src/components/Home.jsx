@@ -17,7 +17,7 @@ function Home() {
     return (
         <>
             <div className="container">
-                <h2>CRUD app using redux toolkit!</h2>
+                <h2 className='text-center m-5'>CRUD app using redux toolkit!</h2>
                 <Link to={"/create"} className='btn btn-success my-3' >Create</Link>
 
                 <table className="table">
